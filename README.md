@@ -1,2 +1,2 @@
 # Investment-simulator
-This program simulates trading of a certain cryptocurrency.
+This program simulates trading of a cryptocurrency.
