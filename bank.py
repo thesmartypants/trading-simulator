@@ -1,3 +1,4 @@
+# simulation for a bank account
 class bank:
 
   def __init__(self,balance):
