@@ -4,7 +4,7 @@ from queue import Queue
 class PredictorMa:
     def __init__(self):
         self.prices = Queue(3)
-        self.cur_mov_avg=0
+        self.cur_mov_avg = 0
 
     def get_signal(self, new_price):
         self.prices.add(new_price)
