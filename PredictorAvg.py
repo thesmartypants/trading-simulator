@@ -1,4 +1,4 @@
-class predict:
+class AvgPredict:
   def __init__(self,hisory):
     self.history=history
   def give_signal(self,price):
