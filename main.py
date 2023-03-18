@@ -20,7 +20,7 @@ while 1:
     d = json.loads(req)
     last_price = d[cur][of_cur]
     print('\n')
-    print('moving avg prediction: '+str(predictor.cur_mov_avg))
+    print('moving avg: '+str(predictor.cur_mov_avg))
     print('last price:', last_price)
 
     t = time.localtime()
