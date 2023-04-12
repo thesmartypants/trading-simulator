@@ -15,7 +15,7 @@ your_bank = Bank(cur_bal)
 predictor = PredictorMa()
 
 while 1:
-    # get latest price
+    # get the latest price
     req = urllib.request.urlopen(url).read().decode()
     d = json.loads(req)
     last_price = d[cur][of_cur]
