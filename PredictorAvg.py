@@ -12,8 +12,8 @@ class AvgPredict:
 
         self.change_avg = self.change_avg / len(self.history)
         if self.change_avg > 0:
-            return 'buy'
-        elif self.change_avg < 0:
             return 'sell'
+        elif self.change_avg < 0:
+            return 'buy'
         else:
             return ''
