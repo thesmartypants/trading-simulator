@@ -1,14 +1,14 @@
 import json
 import urllib.request
 import time
-from queue import Queue
+from myqueue import MyQueue
 from bank import Bank
 from PredictorMa import PredictorMa
 
-cur = input('enter crypto currency: ')
-of_cur = input('official currency in your country ex: cad, usd, mxn: ')
+cur = 'matic-network' #input('enter crypto currency: ')
+of_cur = 'usd'#input('official currency in your country ex: cad, usd, mxn: ')
 url = f'https://api.coingecko.com/api/v3/simple/price?ids={cur}&vs_currencies={of_cur}'
-cur_bal = float(input(f'how much would you be willing to invest? {of_cur} '))
+cur_bal = 100.0 #float(input(f'how much would you be willing to invest? {of_cur} '))
 # initialize components
 your_bank = Bank(cur_bal)
 
@@ -20,7 +20,7 @@ while 1:
     d = json.loads(req)
     last_price = d[cur][of_cur]
     print('\n')
-    print('moving avg: '+str(predictor.cur_mov_avg))
+    print('moving avg: ',predictor.cur_mov_avg)
     print('last price:', last_price)
 
     t = time.localtime()

@@ -1,6 +1,6 @@
-from queue import Queue
+from myqueue import MyQueue
 
-queue1 = Queue(3)
+queue1 = MyQueue(3)
 queue1.add(1)
 queue1.print_content()
 queue1.add(2)

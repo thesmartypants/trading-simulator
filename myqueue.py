@@ -1,4 +1,4 @@
-class Queue:
+class MyQueue:
 
     def __init__(self, size):
         self.size = size
